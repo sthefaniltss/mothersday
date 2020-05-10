@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.main{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100vw;
+}
+header{
+    box-shadow: #6f75b3 0px 2px 8px -1px;
+    background-color: #b8beff;
+    color: white;
+    height: 150px;
+    margin-bottom: 30px;
+}
+header h1{
+    font-size: 15pt;
+}
+
+.description{
+    padding-top: 20px;
+}
+
+.rules{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+}
+
+.buttonGenerator{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    
+}
+.buttonGenerator button{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: #6f75b3 0px -1px 5px -1px;
+    border: none;
+    background-color: #b8beff;
+    color: white;
+    font-size: 11pt;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffd644;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    box-shadow: #ffd744b4 0px -2px 8px -1px;
+}
+.ticket{
+    width: 50vw;
+}
+.ticket img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.144) 0px 1px 10px 3px;
+    border-radius: 50px;
+    animation: pulse 3.3s linear infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1.1);
+    }
+    30%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    70%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width: 600px)  {
+    .ticket{
+        width: 20vw;
+    }
+}
